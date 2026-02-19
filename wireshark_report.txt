@@ -1,0 +1,52 @@
+WIRESHARK NETWORK TRAFFIC ANALYSIS REPORT
+
+Objective:
+To capture and analyze live network traffic using Wireshark and identify different network protocols.
+
+Tool Used:
+Wireshark (Ubuntu Linux)
+
+Network Interface Used:
+wlp4s0 (WiFi Interface)
+
+Procedure:
+
+1. Installed Wireshark on Ubuntu system.
+2. Selected active network interface (wlp4s0).
+3. Started packet capture.
+4. Generated traffic by browsing websites and using ping command.
+5. Captured packets for approximately one minute.
+6. Stopped capture and applied protocol filters.
+
+Protocols Identified:
+
+1. DNS (Domain Name System)
+Purpose: Resolves domain names (e.g., google.com) into IP addresses.
+Observation: DNS query and response packets were observed.
+
+2. TCP (Transmission Control Protocol)
+Purpose: Provides reliable communication between devices.
+Observation: TCP 3-way handshake packets (SYN, SYN-ACK, ACK) were observed.
+
+3. TLS (Transport Layer Security)
+Purpose: Provides encrypted communication for HTTPS websites.
+Observation: Encrypted TLS handshake packets were identified when accessing secure websites.
+
+4. ICMP (Internet Control Message Protocol)
+Purpose: Used for network diagnostics (ping).
+Observation: ICMP echo request and echo reply packets were captured.
+
+Findings:
+The packet capture contained multiple protocol types including DNS queries, TCP connections, encrypted TLS sessions, and ICMP traffic.
+
+Conclusion:
+Wireshark successfully captured live network traffic and allowed identification of multiple protocols. This exercise improved understanding of packet structures and network communication processes.
+
+Learning Outcome:
+- Learned how to capture network traffic
+- Identified common network protocols
+- Applied display filters for analysis
+- Gained hands-on packet inspection experience
+
+Ethical Note:
+The packet capture was performed on my own system for educational purposes only.
